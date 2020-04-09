@@ -1,0 +1,8 @@
+.fieldError textarea {
+    border: 1px solid red;
+}
+
+.fieldError span {
+    color: red;
+}
+

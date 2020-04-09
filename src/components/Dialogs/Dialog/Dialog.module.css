@@ -1,0 +1,18 @@
+.dialog {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.dialog a {
+    color: black;
+    margin-left: 10px;
+}
+
+.dialog a.active {
+    color: blue;
+}
+
+.dialog img {
+    width: 30px;
+}

@@ -1,0 +1,123 @@
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.updateProfile {
+    flex: 1 0 100%;
+    margin-top: 20px;
+}
+
+.profileInfo {
+    margin-left: 20px;
+    flex: auto 1 0;
+}
+
+.profileInfo p {
+    margin-bottom: 15px;
+}
+
+.profileContacts {
+    margin-top: 30px;
+}
+
+.profilePhoto {
+    position: relative;
+    flex: 300px 0 0;
+}
+
+.profilePhoto img {
+    max-width: 100%;
+}
+
+.selectAvatar {
+    position: absolute;
+    top: 10px; left: 10px;
+    opacity: 0;
+    transition: all ease-out .2s;
+}
+
+.selectAvatar input {
+    display: none;
+}
+
+.selectAvatar label {
+    display: block;
+    border-radius: 100px;
+    background-color: #FFC501;
+    padding: 9px 10px;
+    cursor: pointer;
+}
+
+.profileAvatar:hover .selectAvatar {
+    opacity: 1;
+}
+
+.profileStatus {
+    margin-top: 20px;
+}
+
+.status {
+    position: relative;
+}
+
+.status span {
+    position: absolute;
+    background-color: #EB5757;
+    border-radius: 10px;
+    padding: 8px 15px;
+    color: white;
+    font-size: .75em;
+    top: -60px; left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    text-align: center;
+    opacity: 0;
+    z-index: -1;
+    transition: all ease-in .2s;
+}
+
+.status span::after {
+    display: block;
+    content: '';
+    position: absolute;
+    border: 10px solid transparent; 
+    border-top: 10px solid #EB5757;
+    bottom: -20px; left: 50%;
+    transform: translateX(-50%);
+}
+
+.status p {
+    background-color: #F5F6FA;
+    cursor: pointer;
+    padding: 5px 8px;
+}
+
+.status:hover span {
+    animation: statusSwimming .45s ease-in-out infinite alternate;
+    opacity: 1;
+    z-index: 1;
+}
+
+@keyframes statusSwimming {
+    0% {
+        top: -60px;
+    }
+    100% {
+        top: -70px;
+    }
+}
+
+.changeStatus input {
+    width: 100%;
+}
+
+.saveStatus {
+    margin-top: 15px;
+}
+
+.updateProfile input,
+.updateProfile p {
+    margin-bottom: 10px;
+}
+

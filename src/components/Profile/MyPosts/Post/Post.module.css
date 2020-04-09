@@ -1,0 +1,19 @@
+.item {
+    margin-bottom: 15px;
+}
+
+.item img {
+    max-width: 50px;
+}
+
+.postText {
+    display: flex;
+}
+
+.postText span {
+    margin-left: 10px;
+}
+
+.postLikes {
+    margin-top: 10px;
+}

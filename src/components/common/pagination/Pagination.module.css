@@ -1,0 +1,28 @@
+.paginationBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination li {
+    width: 35px; height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    border-radius: 3px;
+    border: 1px solid #6C7185;
+    cursor: pointer;
+}
+
+li.currentPage {
+    background: #FFC501;
+    border: 1px solid #FFC501;
+    color: white;
+}

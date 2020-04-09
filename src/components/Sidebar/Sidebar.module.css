@@ -1,0 +1,9 @@
+.nav {
+    grid-area: nav;
+    background-color: #4880FF;
+    padding: 15px;
+  }
+
+  a.active {
+    color: white;
+  }

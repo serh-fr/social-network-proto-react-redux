@@ -1,0 +1,12 @@
+.formError {
+    padding: 15px 0;
+    color: red;
+}
+
+.loginContainer input {
+    margin-top: 15px;
+}
+
+.loginContainer button {
+    margin-top: 15px;
+}

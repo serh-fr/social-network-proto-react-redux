@@ -11,7 +11,7 @@ import { getUserId } from '../../redux/selectors/auth-selector';
 class ProfileContainer extends React.Component {
 
     getUserId = () => {
-        debugger
+        
         let userIdFromUrl = this.props.match.params.userId;
 
         if(!userIdFromUrl) {
@@ -39,7 +39,7 @@ class ProfileContainer extends React.Component {
     }
 
     componentDidUpdate(prevProps) {
-        debugger
+
         if(JSON.stringify(this.props.profile.profile) !== JSON.stringify(prevProps.profile.profile)) {
             this.getProfile();
             this.getStatus();
